@@ -58,7 +58,7 @@ const projects = [
     link: '#'
   },
   {
-    title: 'Portofolio Kreatif',
+    title: 'Sistem Informasi Teknik Informatika Polnam',
     description: 'Sistem Informasi Teknik Informatika Polnam',
     technologies: ['Vue.js', 'Tailwind CSS' , 'laravel'],
     image: project3,
