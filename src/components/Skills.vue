@@ -43,6 +43,8 @@ import livewireIcon from '../assets/livewire-icon.svg'
 import jquery from '../assets/jquery-icon.png'
 import bootstrap from '../assets/bootstrap-icon.png'
 import hono from '../assets/hono-icon.webp'
+import go from '../assets/go-icon.png'
+import fiber from '../assets/gofiber-icon.png'
 
 const skills = [
   { name: 'Vue.js', icon: vueIcon, level: 90 },
@@ -60,5 +62,7 @@ const skills = [
   { name: 'Jquery', icon: jquery, level: 70 },
   { name: 'Bootstrap', icon: bootstrap, level: 65 },
   { name: 'Hono Js', icon: hono, level: 68 },
+  { name: 'Go', icon: go, level: 68 },
+  { name: 'Go Fiber', icon: fiber, level: 68 },
 ]
 </script>
