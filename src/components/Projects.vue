@@ -59,7 +59,7 @@ const projects = [
   },
   {
     title: 'Portofolio Kreatif',
-    description: 'Portofolio untuk fotografer profesional',
+    description: 'Sistem Informasi Teknik Informatika Polnam',
     technologies: ['Vue.js', 'Tailwind CSS' , 'laravel'],
     image: project3,
     link: 'https://it-polnam.vercel.app'
