@@ -5,23 +5,38 @@
         <div class="text-3xl font-extrabold tracking-wide">
           <span :class="isScrolled ? 'text-yellow-500' : 'text-yellow-300'">Porto</span><span>folio</span>
         </div>
+
+        <!-- Desktop menu -->
         <ul class="hidden md:flex space-x-8 text-lg font-semibold">
           <li><a href="#about" class="hover:text-yellow-400 transition duration-300">Tentang</a></li>
           <li><a href="#projects" class="hover:text-yellow-400 transition duration-300">Proyek</a></li>
           <li><a href="#skills" class="hover:text-yellow-400 transition duration-300">Keterampilan</a></li>
           <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Kontak</a></li>
         </ul>
-        <button class="md:hidden text-inherit focus:outline-none">
-          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+        <!-- Mobile menu button -->
+        <button @click="isMenuOpen = !isMenuOpen" class="md:hidden text-inherit focus:outline-none">
+          <svg :class="['w-8 h-8 transition-transform duration-300', isMenuOpen ? 'rotate-90' : '']" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16" />
+              d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
+
+      <!-- Mobile dropdown menu -->
+      <div v-if="isMenuOpen" class="md:hidden bg-white text-gray-900 shadow-md">
+        <ul class="flex flex-col items-center space-y-4 py-4 font-semibold">
+          <li><a href="#about" class="hover:text-yellow-500">Tentang</a></li>
+          <li><a href="#projects" class="hover:text-yellow-500">Proyek</a></li>
+          <li><a href="#skills" class="hover:text-yellow-500">Keterampilan</a></li>
+          <li><a href="#contact" class="hover:text-yellow-500">Kontak</a></li>
+        </ul>
+      </div>
     </nav>
 
+    <!-- Hero section -->
     <div class="pt-28 pb-32 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center animate-fade-in-up">
-      <div class="container mx-auto px-6 h-100">
+      <div class="container mx-auto px-6">
         <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-8">
           Hai, Saya <span class="text-yellow-300">Djumad Bantan</span>
         </h1>
@@ -29,7 +44,7 @@
           Fullstack Developer Laravel + Vue 
         </p>
         <a href="#contact"
-           class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 px-10 py-4 rounded-full text-xl font-bold shadow-xl transition duration-300">
+          class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 px-10 py-4 rounded-full text-xl font-bold shadow-xl transition duration-300">
           Hubungi Saya
         </a>
       </div>
@@ -41,6 +56,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const isScrolled = ref(false)
+const isMenuOpen = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
