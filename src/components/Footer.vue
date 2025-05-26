@@ -6,7 +6,7 @@
           <h3 class="text-2xl font-bold">
             <span class="text-yellow-400">Porto</span>folio
           </h3>
-          <p class="text-gray-400 mt-2">© 2023 Nama Anda. All rights reserved.</p>
+          <p class="text-gray-400 mt-2">© 2023 Djumad Bantan. All rights reserved.</p>
         </div>
         
         <div class="flex space-x-6">
