@@ -45,7 +45,7 @@ import project3 from '../assets/project3.png'
 const projects = [
   {
     title: 'Sistem Informasi Astekindo Maluku',
-    description: 'Aplikasi e-commerce dengan Vue.js dan Firebase',
+    description: 'Aplikasi Sistem Informasi LSP Astekindo Maluku menggunakan',
     technologies: ['Vue.js', 'Tailwind CSS', 'Pocketbase'],
     image: project1,
     link: 'https://astekindomaluku.vercel.app'
