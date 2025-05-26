@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: 'Sistem Informasi Negeri Kaibobo',
-    description: 'Dashboard admin dengan Vue.js dan Chart.js',
+    description: 'Aplikasi Sistem Informasi Negeri Kaibobo dengan menggunakan laravel, filament dan livewire',
     technologies: ['laravel', 'bootstrap', 'livewire' , 'jquery' , 'filament'],
     image: project2,
     link: '#'
