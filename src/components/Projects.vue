@@ -40,7 +40,7 @@
 <script setup>
 import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
-import project3 from '../assets/project3.png'
+import project3 from '../assets/baguala.png'
 
 const projects = [
   {
@@ -58,11 +58,11 @@ const projects = [
     link: 'https://negerikaibobo.id/'
   },
   {
-    title: 'Sistem Informasi Teknik Informatika Polnam',
-    description: 'Sistem Informasi Teknik Informatika Polnam',
-    technologies: ['Vue.js', 'Tailwind CSS' , 'laravel'],
+    title: 'Baguala Techno',
+    description: 'Website Company Profile Baguala Techno',
+    technologies: ['livewire', 'Tailwind CSS' , 'laravel'],
     image: project3,
-    link: 'https://it-polnam.vercel.app'
+    link: 'https://bagualatechno.com/'
   }
 ]
 </script>
